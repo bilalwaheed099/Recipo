@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Knifee</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/74423cb6bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="logo">
+        <p>Knifee</p>
+
+      </div>
+
+      <form class="search">
+        <input type="text" placeholder="Search a 1,000,000 recipes..." class="search-field">
+        <button type='submit' class="search-button">
+          <span>Search</span>
+        </button>
+      </form>
+
+      <div class="likes">
+        <button class="likes-btn">Likes</button>
+        <ul class="likes__list">
+          <!-- <li class="like-list-item" data-id="${recipe.id}" >
+                                <a href="#${recipe.id}" class="like-element">
+                                  <figure class="likes-results-image">
+                                    <img src="${recipe.img}" alt="" class='result-image'>
+                                  </figure>
+                                  <div class="likes-results-data">
+                                    <h4 class="result-title">${fixTitle(recipe.title)}</h4>
+                                    <p class="result-publisher">${recipe.auth}</p>
+                                  </div>
+                                </a>
+                                <span><button class="del-like-btn">x</button></span>
+                              </li> -->
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <div class="results">
+
+        <ul class="results-list">
+
+          <!-- <li class="result-element">
+            <a href="" class="result-container abc">
+              <figure class="all-results-image">
+                <img src="img/p1.jpg" alt="" class='result-image'>
+              </figure>
+              <div class="results-data">
+                <h4 class="result-title">Pizza With Pepperoni</h4>
+                <p class="result-publisher">The new artist</p>
+              </div>
+            </a>
+          </li> -->
+
+
+        </ul>
+
+        <div class="results-pages">
+
+          <!-- <button class="btn-inline btn-type-next">
+            <span>Page 2</span>
+          </button> -->
+        </div>
+
+      </div>
+
+       <div class="recipe">
+         <!-- <figure class="recipe-fig">
+           <img src="${recipe.img}" alt="" class="recipe-image">
+         </figure>
+         <div class="rec-title">
+
+         </div>
+
+
+         <div class="recipe-info">
+           <div class="rec-time">
+             <span class="time-number">${recipe.time}</span>
+             <span>minutes</span>
+           </div>
+           <div class="rec-servings">
+           <button class="rec-servings-increase">+</button>
+           <button class="rec-servings-decrease">-</button>
+             <span class="serving-number">${recipe.servings}</span>
+             <span>servings</span>
+           </div>
+           <button title="${recipe.id}" class="like-btn" id="${idString}-to-like-btn">Add to Likes</button>
+         </div>
+
+         <div class="recipe-ingredients">
+           <ul class="ingredients-list">
+           ${recipe.ingredients.map(el => createIngredient(el)).join('')}
+           </ul>
+         </div>
+         <button class="add-to-cart-btn">Add to cart</button> -->
+        </div>
+
+      <div class="shopping">
+        <ul class="shopping-list">
+          <!-- <li class="shopping-list-element" id="${el.id}" data-itemid=${el.id}>
+            <input type="number" class="sh-ing-count" step="${el.count}" value="${el.count}" min="0">
+            <span class="sh-ing-unit">${el.unit}</span>
+            <span class="sh-ing-item">${el.ingredient}</span>
+            <button class="list-del-btn">x</button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src='./js/index.js'></script>
+</html>
